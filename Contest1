@@ -8,18 +8,18 @@ public class Contest1 {
 
 		// Your Logic goes here
 
-		String curr = "";
+		String count = "";
 		for(char ch: str.toCharArray()) {
 			if(ch == esc) {
-				result.add(curr);
-				curr = "";
+				result.add(count);
+				count = "";
 				continue;
 			}
-			curr += ch;
+			count += ch;
 		}
 
-		if(!(curr.equals(""))) {
-			result.add(curr);
+		if(!(count.equals(""))) {
+			result.add(count);
 		}
 
 		return result;
